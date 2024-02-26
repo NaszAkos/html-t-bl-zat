@@ -1,0 +1,36 @@
+body{
+    background-color: silver;
+    font-family: "Public Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.table{
+    width: 80%;
+    margin: 15px auto;
+    border: 2px solid black;
+    box-shadow: 0 0 10px gray;
+    padding: 10px;
+    border-radius: 10px;
+    border-collapse: collapse;
+}
+
+.table td, th{
+    border: 1px solid gray;
+    padding: 6px;
+}
+
+.table thead{
+    background-color: slategray;
+}
+
+.table tfoot{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.table tbody>tr>td:last-child{
+    text-align: right;
+}
