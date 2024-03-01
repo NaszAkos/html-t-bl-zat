@@ -4,6 +4,8 @@ body{
     font-optical-sizing: auto;
     font-weight: 200;
     font-style: normal;
+    margin: 0;
+    padding: 0;
 }
 
 .table{
@@ -17,7 +19,7 @@ body{
 }
 
 .table td, th{
-    border: 1px solid gray;
+    border-bottom: 1px solid gray;
     padding: 6px;
 }
 
@@ -25,12 +27,36 @@ body{
     background-color: slategray;
 }
 
+
+.table tbody>tr>td:last-child{
+    text-align: right;
+}
+
+.table tbody tr:hover{
+    cursor: crosshair;
+    background-color: slategray;
+    color: white;
+    font-weight: bold;
+}
+
+
+
 .table tfoot{
     background-color: black;
     color: white;
     text-align: center;
 }
 
-.table tbody>tr>td:last-child{
-    text-align: right;
+#container{
+    background-color: white;
+    box-shadow: 0 0 10px gray;
+    height: 100vh; /* vertical height */
+    padding: 15px;
+    width: 60%;
+    margin: 0 auto;
+}
+
+/* media query */
+@media screen {
+    
 }
